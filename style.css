@@ -10,9 +10,37 @@
 .calculator{
     background: #ffffff;
     padding: 20px;
+    width: 256px;
+    height: 359px;
 }
 
-.calculator form input{
+.num{
+    border: 0;
+    outline: 0;
+    width: 52px;
+    height: 52px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 4px;
+}
+.operator{
     border-radius: 100px;
-    
+    border: 0;
+    outline: 0;
+    width: 52px;
+    height: 52px;
+    font-size: 16px;
+    cursor: pointer;  
+    margin: 4px;
+}
+
+.display{
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 0px 10px;
+    width: 100%;
+    height: 49px;
+    background: #f6f2f2;
+    font-size: 25px;
 }
