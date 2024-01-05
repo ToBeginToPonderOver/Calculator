@@ -1,21 +1,21 @@
-.container{
+.container {
     display: flex;
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #0a0a0a, #3a4452) ;
+    background: linear-gradient(45deg, #3498db, #2c3e50)
 }
 
-.calculator{
-    /* background: #ffffff; */
+.calculator {
+    background: #ffffff;
     padding: 20px;
     width: 256px;
     height: 359px;
     box-shadow: 0 0 15px #000;
 }
 
-.num{
+.num {
     border: 0;
     outline: 0;
     width: 52px;
@@ -24,33 +24,32 @@
     cursor: pointer;
     margin: 4px;
     color: #fff;
-    font-weight: 600;    
-    background:transparent;
-
+    font-weight: 600;
+    background: #3498db;
 }
-.operator{
+
+.operator {
     border-radius: 100px;
     border: 0;
     outline: 0;
     width: 52px;
     height: 52px;
     font-size: 16px;
-    cursor: pointer;  
+    cursor: pointer;
     font-weight: 600;
-    background: #000;
+    background: #2c3e50; 
     margin: 4px;
     color: #fff;
 }
 
-.display{
+.display {
     outline: none;
     border: none;
     text-align: right;
-    margin-bottom: 0px 10px;
+    margin-bottom: 10px;
     width: 100%;
     height: 49px;
-    background: #333333;
+    background: #afafaf;
     font-size: 25px;
     color: #fff;
-
 }
