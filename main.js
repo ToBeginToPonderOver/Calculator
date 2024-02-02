@@ -29,6 +29,28 @@ buttons.forEach((button) => {
             document.querySelector('input').value = string;
         }
       
+        else if (e.target.innerHTML ==='%'){
+            let parts1 = string.split('+');
+            let parts2 = string.split('-');
+            let parts3 = string.split('*');
+            let parts4 = string.split('/');
+            if (!isNaN(parts[parts.length - 1])) {
+                if (string = parts.join('+')){
+                    document.querySelector('input').value = parseFloat(parts1[0]) + parseFloat(parts1[0]*(parts1[parts1.length-1]/100));
+                }
+                else if (string=parts.join('-')){
+                    document.querySelector('input').value = parseFloat(parts[0]) - parseFloat(parts[0]*(parts[parts.length-1]/100));
+                }
+                else if (string=parts.join('*')){
+                    document.querySelector('input').value = parseFloat(parts[0]) * parseFloat(parts[0]*(parts[parts.length-1]/100));
+                }
+                else if (string=parts.join('/')){
+                    document.querySelector('input').value = parseFloat(parts[0]) / parseFloat(parts[0]*(parts[parts.length-1]/100));
+                }
+            } else {
+                console.error('Error: string is not a number');
+            }
         }
+        
     });
 });
